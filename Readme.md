@@ -1,0 +1,1 @@
+Testando funcionalidades e deploy com framework 'Next.js' e 'Vercel';
