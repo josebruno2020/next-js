@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Sobre(props){
+function Sobre(props){
   return (
     <div>
       <h1>Sobre</h1>
@@ -10,6 +10,8 @@ export default function Sobre(props){
     </div>
   );
 }
+
+export default Sobre;
 
 export function getStaticProps(){
   
