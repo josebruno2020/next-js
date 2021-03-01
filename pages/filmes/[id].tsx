@@ -16,12 +16,12 @@ export const getStaticPaths: GetStaticPaths = async(context) => {
   const response = await api.get('/filmes');
   const filmes = await response.data;
 
-  const paths = filmes.data.map(filme => {
-    return {params: {id:String(filme.id)}}
-  });
+  // const paths = filmes.data.map(filme => {
+  //   return {params: {id:String(filme.id)}}
+  // });
 
   return {
-    paths,
+    paths:[],
     fallback:true
   }
 }
