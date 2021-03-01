@@ -30,14 +30,14 @@ function Filmes({ filmes }){
 export async function getStaticProps() {
   const res = await api.get('/filmes');
   const filmes = await res.data;
-  // if(res.ok === false){
-  //   return {
-  //     redirect: {
-  //       destination: '/',
-  //       permanent:false
-  //     }
-  //   }
-  // }
+  if(res.ok === false){
+    return {
+      redirect: {
+        destination: '/',
+        permanent:false
+      }
+    }
+  }
   
   return {
     props: {
