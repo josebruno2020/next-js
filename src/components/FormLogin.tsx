@@ -12,18 +12,18 @@ export function FormLogin(){
 
   useEffect(() => {
     
-    async function Filmes () {
-      try{
+    // async function Filmes () {
+    //   try{
 
-        const response = await api.get('/filmes');
-        await setFilmes(response.data.data);
+    //     const response = await api.get('/filmes');
+    //     await setFilmes(response.data.data);
   
-      } catch(response){
-        console.log(response.data);
-        //setErrorMessage(response.data);
-      }
-    }
-    Filmes();
+    //   } catch(response){
+    //     console.log(response.data);
+    //     //setErrorMessage(response.data);
+    //   }
+    // }
+    // Filmes();
     
   })
   
